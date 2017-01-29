@@ -1,37 +1,174 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
 	<title>東京大学オルガン同好会</title>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/js/material.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/js/ripples.js"></script>
 
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material.css" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/ripples.css" rel="stylesheet">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	<script>
-        $(function(){
-            $.material.init();
-            $('#header').load('header.html');
-        });
-    </script>
+	<!-- CSS  -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
+	<link rel="shortcut icon" href="img/favicon.ico" />
+	<style type="text/css">
+		body {
+			font-family: "Sawarabi Mincho";
+		}
+	</style>
 </head>
 
 <body>
-	<div id="header"></div>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="view overlay">
-				<img src="bg_blur.jpg" class="img-fluid cover-img" alt="">
-				<div class="cover-text text-center">
-					<p class="white-text">駒場でオルガンを弾く</p>
+	<nav class="white" role="navigation">
+		<div class="nav-wrapper container">
+			<a id="logo-container" href="#" class="brand-logo">東京大学オルガン同好会</a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="#">Navbar Link</a></li>
+			</ul>
+
+			<ul id="nav-mobile" class="side-nav">
+				<li><a href="#">Navbar Link</a></li>
+			</ul>
+			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+		</div>
+	</nav>
+
+	<div id="index-banner" class="parallax-container">
+		<div class="section no-pad-bot">
+			<div class="container">
+				<br><br>
+				<h1 class="header center teal-text text-lighten-2">駒場でオルガンを弾く</h1>
+				<div class="row center">
+					<h5 class="header col s12 light">東京大学オルガン同好会は東大で唯一のパイプオルガンサークルです</h5>
+				</div>
+				<div class="row center">
+					<a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Contact Us</a>
+				</div>
+				<br><br>
+
+			</div>
+		</div>
+		<div class="parallax"><img src="img/bg_blur.jpg" alt="Unsplashed background img 1"></div>
+	</div>
+
+
+	<div class="container">
+		<div class="section">
+
+			<!--   Icon Section   -->
+			<div class="row">
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center brown-text"><i class="material-icons">credit_card</i></h2>
+						<h5 class="center">会費無料</h5>
+
+						<p class="light">都内の貸しオルガンなどとは違い、弊会では毎月のオルガンの使用にあたっていかなる金銭も徴収しません。入会金もありません。</p>
+					</div>
+				</div>
+
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center brown-text"><i class="material-icons">group</i></h2>
+						<h5 class="center">学年不問</h5>
+
+						<p class="light">２年生でも、修士でも、博士でも大歓迎です。会の運営もなんとなく適当にやっているので学年で役割が固定されることはありません。</p>
+					</div>
+				</div>
+
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center brown-text"><i class="material-icons">query_builder</i></h2>
+						<h5 class="center">拘束時間ゼロ</h5>
+
+						<p class="light">活動は基本的に個人練習のみなので拘束時間はありません。自分のその時のスケジュールに合わせて練習できます。忙しい人は半年に１回とかでも大丈夫です。</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="parallax-container valign-wrapper">
+		<div class="section no-pad-bot">
+			<div class="container">
+				<div class="row center">
+					<h5 class="header col s12 light">最近の活動</h5>
+				</div>
+			</div>
+		</div>
+		<div class="parallax"><img src="img/playing.jpg" alt="Unsplashed background img 2"></div>
+	</div>
+
+	<div class="container">
+		<div class="section">
+
+			<div class="row">
+				<!--   Icon Section   -->
+				<div class="row">
+					<div class="col s12 m6">
+						<div class="icon-block">
+							<h2 class="center brown-text"><i class="material-icons">settings_input_antenna</i></h2>
+							<h5 class="center">News</h5>
+							<a class="twitter-timeline" data-height="500" href="https://twitter.com/organ900">Tweets by organ900</a> <script async
+								src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+							</a>
+						</div>
+					</div>
+
+					<div class="col s12 m6">
+						<div class="icon-block">
+							<h2 class="center brown-text"><i class="material-icons">today</i></h2>
+							<h5 class="center">練習日程</h5>
+							<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;height=500&amp;wkst=2&amp;hl=ja&amp;bgcolor=%23FFFFFF&amp;src=ja.japanese%23holiday%40group.v.calendar.google.com&amp;color=%230F4B38&amp;src=utorgan900%40gmail.com&amp;color=%23AB8B00&amp;ctz=Asia%2FTokyo"
+								style="border-width:0" width="600" height="500" frameborder="0" scrolling="no"></iframe>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+
+	<div class="parallax-container valign-wrapper">
+		<div class="section no-pad-bot">
+			<div class="container">
+				<div class="row center">
+					<h5 class="header col s12 light">小ぶりながら１２ストップ、カップラーを備えた本格的なオルガンです</h5>
+				</div>
+			</div>
+		</div>
+		<div class="parallax"><img src="img/kodo.jpg" alt="Unsplashed background img 3"></div>
+	</div>
+
+	<footer class="page-footer teal">
+		<div class="container">
+			<div class="row">
+				<div class="col l9 s12">
+					<h5 class="white-text">Organ Bio</h5>
+					<p class="grey-text text-lighten-4">もともとは吉祥寺カトリック教会にあったWalcker社製のオルガン。1977年、火事に遭って冠水し、解体されていた時に、東京大学教養学部がそれを引き取り、駒場キャンパス900番教室に移設した。その際、修復不能となっていた多くのパイプと部品が、Karl
+						Schuke社から新たに購入したものと交換された。設置者はオルガン制作者望月広幸氏。修復・移設にかかった費用が、森ビル株式会社初代社長森泰吉郎氏の多額の寄付によって賄われたため、「森オルガン」とも呼ばれる。
+
+					</p>
+
+
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				All rights reserved 東京大学オルガン同好会
+			</div>
+		</div>
+	</footer>
+
+
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/materialize.js"></script>
+	<script src="js/init.js"></script>
+
 </body>
 
 </html>
