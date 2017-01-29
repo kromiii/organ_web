@@ -20,15 +20,22 @@
 </head>
 
 <body>
+	<ul id="dropdown1" class="dropdown-content">
+		<li><a href="./about.html">About</a></li>
+		<li><a href="./access.html">アクセス</a></li>
+		<li><a href="./contact.html">Contact</a></li>
+	</ul>
 	<nav class="white" role="navigation">
 		<div class="nav-wrapper container">
-			<a id="logo-container" href="#" class="brand-logo">東京大学オルガン同好会</a>
+			<a id="logo-container" href="#!" class="brand-logo">東京大学オルガン同好会</a>
 			<ul class="right hide-on-med-and-down">
-				<li><a href="#">Navbar Link</a></li>
+				<!-- Dropdown Trigger -->
+				<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i></a></li>
 			</ul>
-
 			<ul id="nav-mobile" class="side-nav">
-				<li><a href="#">Navbar Link</a></li>
+				<li><a href="./about.html">About</a></li>
+				<li><a href="./access.html">アクセス</a></li>
+				<li><a href="./contact.html">Contact</a></li>
 			</ul>
 			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 		</div>
@@ -43,7 +50,7 @@
 					<h5 class="header col s12 light">東京大学オルガン同好会は東大で唯一のパイプオルガンサークルです</h5>
 				</div>
 				<div class="row center">
-					<a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Contact Us</a>
+					<a href="./contact.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Contact Us</a>
 				</div>
 				<br><br>
 
@@ -63,7 +70,7 @@
 						<h2 class="center brown-text"><i class="material-icons">credit_card</i></h2>
 						<h5 class="center">会費無料</h5>
 
-						<p class="light">都内の貸しオルガンなどとは違い、弊会では毎月のオルガンの使用にあたっていかなる金銭も徴収しません。入会金もありません。</p>
+						<p class="light">毎月のオルガンの使用にあたっては、いかなる金銭も徴収しません。入会金もありません。</p>
 					</div>
 				</div>
 
@@ -135,7 +142,7 @@
 		<div class="section no-pad-bot">
 			<div class="container">
 				<div class="row center">
-					<h5 class="header col s12 light">小ぶりながら１２ストップ、カップラーを備えた本格的なオルガンです</h5>
+					<h5 class="header col s12 light">見学・試奏は常時受け付けておりますのでお気軽にお越しください</h5>
 				</div>
 			</div>
 		</div>
@@ -149,10 +156,21 @@
 					<h5 class="white-text">Organ Bio</h5>
 					<p class="grey-text text-lighten-4">もともとは吉祥寺カトリック教会にあったWalcker社製のオルガン。1977年、火事に遭って冠水し、解体されていた時に、東京大学教養学部がそれを引き取り、駒場キャンパス900番教室に移設した。その際、修復不能となっていた多くのパイプと部品が、Karl
 						Schuke社から新たに購入したものと交換された。設置者はオルガン制作者望月広幸氏。修復・移設にかかった費用が、森ビル株式会社初代社長森泰吉郎氏の多額の寄付によって賄われたため、「森オルガン」とも呼ばれる。
-
 					</p>
-
-
+				</div>
+				<div class="col l3 s12">
+					<h5 class="white-text">Connect</h5>
+					<ul>
+						<li><a href="https://twitter.com/organ900" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @organ900</a>							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+						<li>
+							<div class="fb-follow" data-href="https://www.facebook.com/utorgan.900/" data-height="200" data-layout="button_count" data-size="large"
+								data-show-faces="true"></div>
+						</li>
+						<li style="margin-top:7px">
+							<script src="https://apis.google.com/js/platform.js"></script>
+							<div class="g-ytsubscribe" data-channel="strangers900" data-layout="default" data-count="default"></div>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -168,7 +186,21 @@
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="js/materialize.js"></script>
 	<script src="js/init.js"></script>
-
+	<script>
+    $(function(){
+      $(".dropdown-button").dropdown();
+    });
+  </script>
+	<div id="fb-root"></div>
+	<script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.8";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 </body>
 
 </html>
